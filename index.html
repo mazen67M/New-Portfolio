@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">
+        <a href="#">
+          <img src="./assets/logo.png" alt="Mvzin logo" class="logo-pic">
+        </a>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Mvzzin</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/profile-pic.png" alt="Mvzzin profile picture" class="profile-pic"/>
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Mazzin Mohsen</h1>
+        <p class="section__text__p2">Back-end Engineer</p>
+        <p class="section__text__p2">Artist</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/CV2.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/mazzin-mohsen-633346247'"
+          />
+          <img
+          src="./assets/instgram.png"
+          alt="My Github profile"
+          class="icon"
+          onclick="location.href='https://www.instagram.com/mvzzen.1/'"
+        />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/mazen67M/'"
+          />
+        
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic2.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ year <br />Back-end Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelors Degree<br />Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I'm a driven and curious computer science student at BSU,
+              currently on track to graduate in 2026. While I'm passionate about both computer science and information systems,
+              my current focus lies in backend development using ASP.NET technology.
+              For the past year, I've been actively honing my skills in [ASP.NET mvc , HTML5 ,CSS3, Bootstrab, JavaScript] and 
+              I've had the opportunity to put my knowledge into practice by building personal projects like an E-commerce website and a Portfolio (like the one you're viewing now!).
+              I enjoy the challenge of creating robust and user-friendly applications that leverage the power of ASP.NET.
+              Beyond academics, I'm constantly seeking ways to expand my knowledge and stay up-to-date with the latest advancements in the field.
+              I'm eager to contribute to innovative projects and collaborate with talented developers in the future.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Internships</h2>
+            <div class="article-container">
+              
+              <article class="experience-article">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>DEPI .Net framwork Internship 
+                    <br>(May 2024 - Oct 2024)</h3>
+                  <p>Honed your full-stack development skills, including:
+                    <br>
+                    Database design and management using SQL Server.
+                    <br>
+                    Front-end development with HTML5, CSS3, JavaScript, and jQuery.
+                    <br>
+                    Back-end development with C#.
+                    <br>
+                    Object-Oriented Programming principles.
+                    <br>
+                    ASP.NET MVC and Entity Framework.</p>
+                </div>
+              </article>
+              <article class="experience-article">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ITI ASP.NET MVC Web Development Track <br> (Aug 2024 - Sep 2024)</h3>
+                  <p>Deepened my understanding of ASP.NET MVC for building web applications.
+                    <br>
+                    Applied your knowledge to practical projects</p>
+                </div>
+              </article>
+              <article class="experience-article">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CIB Internship <br>(July 2024 - Aug 2024)</h3>
+                  <p>Gained valuable insights into the workings of the banking system.</p>
+                </div>
+              </article>
+              <article class="experience-article">
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ITI Flask Web Development Track 
+                    <br>(Sep 2023 - Oct 2023) </h3>
+                  <p>
+                    Focused on backend development using the Flask framework in Python. <br>
+                    Gained experience in building web applications.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Set of Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JQuery</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Performance optimization</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Browser Developer Tools</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Backend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL Server</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Database</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C#</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Object-Oriented Programming</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git & Github</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ASP.net MVC</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ASP.net API</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Entity Framework</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#services'"
+      />
+
+    </section>
+
+    <section id="services">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">My Services</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/coding2.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h2>Web development</h2><hr>
+              <p>Proficient in building scalable web applications using ASP.NET MVC. <br>
+                 Experienced in C#, Entity Framework, and SQL Server. <br>
+                 Creating dynamic user interfaces and implementing secure authentication.</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/art2.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h2>Art</h2>
+              <hr>
+              <p>
+                Custom, hand-drawn pencil portraits. <br>
+                Personalized and high-quality art. <br>
+                Various styles to choose from. <br>
+                Ideal for gifts, home decor, and keepsakes.</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/wordpress.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>WordPress</h3>
+              <hr>
+              <p>
+                I can help you create a custom WordPress website with a clean, modern design. <br>
+                I can also help you customize and enhance your existing WordPress site. <br>
+                I can also help you with theme development and plugin creation. <br>
+              </p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I specialize in creating engaging and visually appealing web experiences.
+              I am skilled in HTML, CSS, and JavaScript for frontend development, as well as
+              Python and Django for backend development. I also have experience with
+              WordPress and can help you create custom themes and plugins.  
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+              <img
+                src="./assets/project-1b.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Smart Ease</h2>
+            <p> E-Commerce to sell any smart device Smart watch, Headphones,....</p>
+            <br>
+            <div class="btn-container">
+             
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://dev-mvzzins-website.pantheonsite.io/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Project 2"
+                class="project-img"
+              />
+              <img
+                src="./assets/project-2b.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Personal website</h2>
+            <p> My personal website showcasing my skills and experiences.</p>
+            <br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://mazen67m.github.io/portofolio-la/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/drawing1.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Tyson Drawing</h2>
+            <br><br><br>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.instagram.com/p/CWdokUEjnc9/'"
+              >
+                Go instagram
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/drawing2.png"
+                alt="Project 3"
+                class="project-img"
+              />
+              <img
+                src="./assets/drawing3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">More Drawings</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://www.instagram.com/mvzzen.1/'"
+              >
+                Go instagram
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:mazenmohsen11111@gmail.com">mazenmohsen11111@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/mazzin-mohsen-633346247">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Mvzzin. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
